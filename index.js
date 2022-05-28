@@ -35,4 +35,3 @@ mongoose.connect(process.env.CONNECTION_URL, { useNewUrlParser: true, useUnified
         console.log(err);
     });
 
-mongoose.set('useFindAndModify', false);
