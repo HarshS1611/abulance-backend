@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import hpRouter from './routes/hospital.js';
 import drsRouter from './routes/driver.js';
 import bookRouter from './routes/book.js';
+import userRouter from './routes/user.js';
 
 const app = express();
 dotenv.config();
@@ -21,6 +22,7 @@ app.get('/', (req, res) => {
 app.use('/hospital', hpRouter);
 app.use('/driver', drsRouter);
 app.use('/book', bookRouter);
+app.use('/user', userRouter);
 
 
 const PORT = process.env.PORT || 5000;

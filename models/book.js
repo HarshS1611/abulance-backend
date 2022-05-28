@@ -20,6 +20,14 @@ const bookSchema = new mongoose.Schema({
     Booking_Date: {
         type: Date,
         default: new Date()
+    },
+    pickup_lat: {
+        type: Number,
+        required: true
+    },
+    pickup_lng: {
+        type: Number,
+        required: true
     }
 });
 
